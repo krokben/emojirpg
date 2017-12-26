@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import appActions from './actions/appActions';
 import Header from './components/Header';
 import Menu from './components/Menu';
+import Game from './components/Game';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
         <Header appActions={this.props.appActions} />
         {this.props.app.menu && <Menu app={this.props.app} appActions={this.props.appActions} />}
+        <Game />
       </div>
     );
   }
