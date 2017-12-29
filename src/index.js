@@ -10,6 +10,19 @@ const initialState = {
   app: {
     menu: false,
   },
+  hero: {
+    lvl: 1,
+    hp: 10,
+    atk: 3,
+    def: 2,
+  },
+  enemy: {
+    name: 'monkey',
+    emoji: '🐒',
+    lvl: 1,
+    hp: 10,
+    atk: 2,
+  },
 };
 
 const store = configureStore(initialState);

@@ -13,8 +13,16 @@ export default class Game extends Component {
   render() {
     return (
       <div {...bem()}>
-        <Enemy />
-        <Attack />
+        <Enemy
+          enemy={this.props.enemy}
+          hero={this.props.hero}
+        />
+        <Attack
+          enemy={this.props.enemy}
+          hero={this.props.hero}
+          enemyActions={this.props.enemyActions}
+          heroActions={this.props.heroActions}
+        />
         <Defend />
         <Item />
         <Run />

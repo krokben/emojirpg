@@ -1,5 +1,4 @@
 .enemy {
-  cursor: pointer;
   font-size: 100px;
   margin: auto;
   position: absolute;
@@ -7,13 +6,14 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  &:hover {
-    filter: grayscale(100%);
-  }
-
   &__label-no {
     font-size: 20px;
     position: absolute;
+
+    &--lvl {
+      right: -12px;
+      top: -12px;
+    }
 
     &--hp {
       left: -12px;
@@ -29,5 +29,10 @@
   &__label-text {
     font-size: 12px;
     margin-left: 2px;
+
+    &--lvl {
+      margin-left: 0;
+      margin-right: 2px;
+    }
   }
 }

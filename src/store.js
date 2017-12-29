@@ -7,6 +7,6 @@ const finalCreateStore = compose(
   applyMiddleware(thunk, createLogger())
 )(createStore);
 
-export default function configureStore(initialState = {app: {}}) {
+export default function configureStore(initialState = {app: {}, hero: {}, enemy: {}}) {
   return finalCreateStore(rootReducer, initialState);
 }

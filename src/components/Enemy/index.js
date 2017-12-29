@@ -8,9 +8,21 @@ export default class Enemy extends Component {
   render() {
     return (
       <div {...bem()}>
-        <span role="img" aria-label="monkey">🐒</span>
-        <div {...bem('label-no', 'hp')}>10<span {...bem('label-text')}>hp</span></div>
-        <div {...bem('label-no', 'atk')}>2<span {...bem('label-text')}>atk</span></div>
+        <span role="img" aria-label={this.props.enemy.name}>
+          {this.props.enemy.emoji}
+        </span>
+        <div {...bem('label-no', 'lvl')}>
+          <label {...bem('label-text', 'lvl')}>lvl</label>
+          {this.props.enemy.lvl}
+        </div>
+        <div {...bem('label-no', 'hp')}>
+          {this.props.enemy.hp}
+          <label {...bem('label-text')}>hp</label>
+        </div>
+        <div {...bem('label-no', 'atk')}>
+          {this.props.enemy.atk}
+          <label {...bem('label-text')}>atk</label>
+        </div>
       </div>
     );
   }
