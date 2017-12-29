@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import BEMHelper from 'react-bem-helper';
 import './style.css';
 import Enemy from './../Enemy';
+import Attack from './../Attack';
+import Defend from './../Defend';
+import Item from './../Item';
+import Run from './../Run';
 
 const bem = new BEMHelper({name: 'game'});
 
@@ -10,6 +14,10 @@ export default class Game extends Component {
     return (
       <div {...bem()}>
         <Enemy />
+        <Attack />
+        <Defend />
+        <Item />
+        <Run />
       </div>
     );
   }

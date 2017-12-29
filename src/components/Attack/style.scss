@@ -1,0 +1,13 @@
+.attack {
+  cursor: pointer;
+  font-size: 50px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    filter: invert(100%);
+  }
+}

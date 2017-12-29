@@ -1,8 +1,33 @@
 .enemy {
+  cursor: pointer;
   font-size: 100px;
   margin: auto;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  &:hover {
+    filter: grayscale(100%);
+  }
+
+  &__label-no {
+    font-size: 20px;
+    position: absolute;
+
+    &--hp {
+      left: -12px;
+      top: -12px;
+    }
+
+    &--atk {
+      right: -12px;
+      bottom: 0;
+    }
+  }
+
+  &__label-text {
+    font-size: 12px;
+    margin-left: 2px;
+  }
 }

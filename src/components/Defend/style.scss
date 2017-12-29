@@ -1,0 +1,13 @@
+.defend {
+  cursor: pointer;
+  font-size: 50px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    filter: invert(100%);
+  }
+}

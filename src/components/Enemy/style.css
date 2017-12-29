@@ -1,7 +1,22 @@
 .enemy {
+  cursor: pointer;
   font-size: 100px;
   margin: auto;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+  .enemy:hover {
+    filter: grayscale(100%); }
+  .enemy__label-no {
+    font-size: 20px;
+    position: absolute; }
+    .enemy__label-no--hp {
+      left: -12px;
+      top: -12px; }
+    .enemy__label-no--atk {
+      right: -12px;
+      bottom: 0; }
+  .enemy__label-text {
+    font-size: 12px;
+    margin-left: 2px; }

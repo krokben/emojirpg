@@ -1,0 +1,10 @@
+.run {
+  cursor: pointer;
+  font-size: 50px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%); }
+  .run:hover {
+    filter: invert(100%); }
